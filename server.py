@@ -21,6 +21,7 @@ print("Server running at port {}. Waiting for connections...".format(port))
 
 state = GameState()
 
+
 def client(_connection, _player):
     _connection.send(pickle.dumps(_player))
     reply = []
